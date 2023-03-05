@@ -210,10 +210,6 @@
 
 <body oncontextmenu="return false;" unselectable="on" onselectstart="return false;"><canvas width="715"
     height="974"></canvas>
-  <audio id="audio" preload="auto" loop>
-    <source type="audio/mp4"
-      src="https://cdn.discordapp.com/attachments/852618525507059762/895081058134007818/ralli-x-feel-batuflex-dans-emirhan-buyukcakal.mp3">
-  </audio>
   <div class="center">
     <center>
       <div class="durum" style="display: none;"></div>
@@ -763,34 +759,6 @@
       myClock.innerText = h + ":" + m + ":" + s + " " + diem;
     }
     renderTime();
-  </script>
-  <script type="text/javascript">
-    let typed;
-    var audio = document.getElementById("audio");
-
-    function pVid() {
-      audio.paused ? audio.play() : audio.pause();
-      $("#sozler-fake").hide();
-      $("#sozler").show();
-      let strings_array = [
-      ];
-      let options = {
-        strings: strings_array,
-        typeSpeed: 20,
-        startDelay: 3500,
-        backDelay: 1500,
-        backSpeed: 0,
-        loop: true,
-        loopCount: Infinity
-      };
-
-      if ($(".durum").data("durum2") !== "start") {
-        typed = new Typed("#sozler", options);
-        $(".durum").data("durum2", "start");
-        return;
-      }
-      typed.toggle();
-    }
   </script>
 </body>
 
